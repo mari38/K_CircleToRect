@@ -20,6 +20,8 @@ void ofApp::update(){
         p[i].x = ofxTween::map(nowFrame, 0, loopFrame, pStart[i].x, pGoal[i].x, true, easing);
         p[i].y = ofxTween::map(nowFrame, 0, loopFrame, pStart[i].y, pGoal[i].y, true, easing);
         
+        
+        
     }
     
 }
@@ -68,7 +70,6 @@ void ofApp::setPosition(){
         }else{
             pStart[i] = ofPoint(-radius*rectRate,radius*rectRate);
         }
-        cout << "x : " << sin(theta)*radius << endl;
     }
     
     

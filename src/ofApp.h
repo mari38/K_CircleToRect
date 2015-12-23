@@ -25,9 +25,9 @@ class ofApp : public ofBaseApp{
     int radius;//円の半径
     
     ofxEasingExpo easing;
-    ofPoint pGoal[pointNum];
-    ofPoint pStart[pointNum];
-    ofPoint p[pointNum];
+    ofPoint pGoal[pointNum];//最後の形を描く座標
+    ofPoint pStart[pointNum];//最初の形を描く座標
+    ofPoint p[pointNum];//mapで帰ってきた値
     
     
     void setPosition();
